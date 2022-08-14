@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="task.css" />
     <title>Игра-кликер</title>
 </head>
 <body>
@@ -19,19 +20,19 @@
     </header>
     <main class="content">
         <div class="card">
-            <div class="clicker">
-                <div class="clicker__status">
-                    Всего кликов <span id="clicker__counter">0</span>
-                </div>
-                <img 
-                    src="https://i.postimg.cc/T1bWdf2y/1024px-Pepperidge-Farm-Nantucket-Cookie.jpg" 
-                    alt=""
-                    id="cookie"
-                    class="clicker__cookie"
-                    width="200">
-            </div>
+          <div class="clicker">
+            <div class="clicker__status">Всего кликов <span id="clicker__counter">0</span></div>
+            <div class="clicker__status">Скорость кликов <span id="speed__counter">0</span></div>
+            <img
+              src="https://i.postimg.cc/T1bWdf2y/1024px-Pepperidge-Farm-Nantucket-Cookie.jpg"
+              alt=""
+              id="cookie"
+              class="clicker__cookie"
+              width="200"
+            />
+          </div>
         </div>
-    </main>    
+    </main>
     <script src="task.js"></script>
 </body>
 </html>
