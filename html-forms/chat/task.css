@@ -1,8 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
 .chat-widget {
   position: fixed;
   bottom: 0;
   right: 0;
 }
+
 .chat-widget__area {
   display: none;
   width: 300px;
@@ -33,10 +39,10 @@
   position: relative;
   width: 50px;
   height: 250px;
-  background: red;
+  background: rgb(0, 162, 255);
   border-radius: 20px 0 0 0;
+  cursor: pointer;
 }
-
 
 .message {
   margin-bottom: 10px;
@@ -57,11 +63,13 @@
   margin-right: 5px;
   font-size: 10px;
 }
+
 .message_client .message__time {
   order: 2;
-  margin-right: 0;;
+  margin-right: 0;
   margin-left: 5px;
 }
+
 .message__text {
   order: 1;
   display: inline-block;
@@ -72,7 +80,7 @@
 }
 
 .message_client .message__text {
-  background: red;
+  background: rgba(255, 196, 0, 0.877);
 }
 
 .chat-widget__input {
