@@ -27,22 +27,22 @@ function load() {
         } = target.getBoundingClientRect();
 
         if (position === 'top') {
-            tooltip.style.top = top - 35 + 'px';
+            tooltip.style.top = top + scrollY - 35 +'px';
             tooltip.style.left = left + 'px';
         }
 
         if (position === 'bottom') {
-            tooltip.style.top = bottom + 5 + 'px';
+            tooltip.style.top = bottom + scrollY + 5 + 'px';
             tooltip.style.left = left + 'px';
         }
 
         if (position === 'right') {
-            tooltip.style.top = top + 'px';
+            tooltip.style.top = top + scrollY - 5 + 'px';
             tooltip.style.left = left + width + 5 + 'px';
         }
 
         if (position === 'left') {
-            tooltip.style.top = top + 'px';
+            tooltip.style.top = top + scrollY - 5 + 'px';
             tooltip.style.left = left - width - 15 + 'px';
         }
 
